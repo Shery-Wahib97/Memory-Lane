@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "firstname": "Shery",
+        "lastmame": "Wahib",
+        "username": "shw",
+        "password": "112233"
+    },
+    {
+        "id": 2,
+        "firstname": "shery",
+        "lastmame": "wahib",
+        "username": "shery.w",
+        "password": "112233"
+    },
+    {
+        "id": 3,
+        "firstname": "Bero",
+        "lastmame": "Mosa",
+        "username": "Bero.M",
+        "password": "112233"
+    }
+]
