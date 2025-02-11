@@ -1,3 +1,4 @@
+
 let username = document.querySelector("#username");
 let password = document.querySelector("#password");
 const form = document.querySelector("#login-form");
@@ -20,11 +21,12 @@ form.addEventListener("submit", async (event) => {
         if (!response.ok) {
             throw new Error("Invalid Username or password");
         } else {
-            const result = await response.json()
-            window.location.href = "home.html"
-            localStorage.setItem("username", result.username)
+            const data = await response.json()
             localStorage.setItem( "loginSuccess", "true")
-            console.log(result);
+            localStorage.setItem("userID", data.id);
+            
+            window.location.href = "home.html"
+            console.log(data);
         }
 
     } catch (error) {
